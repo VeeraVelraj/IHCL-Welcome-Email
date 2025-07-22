@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FlexiCore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style type="text/css">
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background-color: #012b49;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        h2 {
+            color: #012b49;
+            margin-top: 0;
+            font-size: 22px;
+            border-bottom: 2px solid #012b49;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        h3 {
+            color: #012b49;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        
+        .feature-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #012b49;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            background-color: #e9f0f7;
+            transform: translateX(5px);
+        }
+        
+        .feature-icon {
+            color: #012b49;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #012b49;
+            color: white !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #034b8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(1, 43, 73, 0.2);
+        }
+        
+        .footer {
+            background-color: #012b49;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+            padding-left: 0;
+        }
+        
+        .steps li {
+            list-style: none;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .steps li:hover {
+            transform: translateX(5px);
+        }
+        
+        .steps li:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #012b49;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+        
+        .disclaimer {
+            font-size: 11px;
+            color: #666666;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eeeeee;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1><i class="fas fa-shield-alt" style="margin-right: 10px;"></i> Welcome to FlexiCore</h1>
+            <p>Your Digital Security & Safety Platform</p>
+        </div>
+        
+        <div class="content">
+            <p>Dear Colleague,</p>
+            
+            <p>We're delighted to welcome you to <strong style="color: #012b49;">FlexiCore</strong>, IHCL's unified platform for <strong>Brand Protection, Security & Safety</strong>. As an early adopter, you're helping shape the future of our digital ecosystem.</p>
+            
+            <h2><i class="fas fa-sign-in-alt feature-icon"></i> How to Access FlexiCore</h2>
+            <ol class="steps">
+                <li>Log in to <strong>MyTaj</strong></li>
+                <li>Navigate to <strong>Quick Links → Applications → FlexiCore</strong></li>
+                <li>Use your existing MyTaj credentials to access the dashboard</li>
+            </ol>
+            
+            <h2><i class="fas fa-rocket feature-icon"></i> Explore Beta Features</h2>
+            <div class="feature-box">
+                <p><i class="fas fa-chart-line feature-icon"></i> Monitor live <strong>risk and engagement metrics</strong> on your dashboard</p>
+            </div>
+            <div class="feature-box">
+                <p><i class="fas fa-exclamation-triangle feature-icon"></i> Submit <strong>Yellow-Card observations</strong> or <strong>Incident Reports</strong> (desktop/mobile)</p>
+            </div>
+            <div class="feature-box">
+                <p><i class="fas fa-clipboard-check feature-icon"></i> Manage <strong>digital risk registers</strong> for your property</p>
+            </div>
+            <div class="feature-box">
+                <p><i class="fas fa-tasks feature-icon"></i> Track <strong>team compliance tasks</strong> at a glance</p>
+            </div>
+            
+            <p><em>Advanced modules (analytics, audits, predictive alerts) will roll out soon-stay tuned for in-app updates!</em></p>
+            
+            <h2><i class="fas fa-question-circle feature-icon"></i> Need Help?</h2>
+            <p><i class="fas fa-book feature-icon"></i> Quick-start guide: <strong>Help → Getting Started</strong> in FlexiCore</p>
+            <p><i class="fas fa-ticket-alt feature-icon"></i> Contact <strong>FlexiCore Support</strong> via the ticketing tool</p>
+            
+            <center>
+                <a href="https://flexicore.ihcltata.com/dashboards/558" target="_blank" class="btn"><i class="fas fa-play" style="margin-right: 8px;"></i> Get Started Now</a>
+            </center>
+            
+            <div class="signature">
+                <p>Thank you for partnering with us to build a <strong style="color: #012b49;">data-driven Security & Safety</strong> future. We value your feedback!</p>
+                
+                <p>Warm regards,<br>
+                <strong>Amandeep Hunjan</strong><br>
+                Product Manager, FlexiCore<br>
+                The Indian Hotels Company Limited</p>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Note:</strong> FlexiCore© is the exclusive intellectual property of IHCL's Security & Safety Department. Unauthorized use is prohibited.</p>
+            </div>
+        </div>
+        
+        <footer style="background-color:#001a33; color:#b0bec5; padding:0px 0 20px;border-radius:10px">
+        <div style="width:85%; max-width:1200px; margin:0 auto;">
+         
+            <div style="border-top:1px solid #1a3a5a; padding-top:20px; text-align:center; font-size:12px;">
+                <p>FlexiCore© is copyrighted to the S&S Department of the Indian Hotels Company Limited.</p>
+                <p>Version FlexiCore beta | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
